@@ -4,7 +4,9 @@
 // Sass:
 // https://fontawesome.com/how-to-use/on-the-web/using-with/sass
 
-
+@import "partials/reset";
+@import "partials/paulina header";
 body{
-  background-color: #BADA55;
+  background-color: white;
 }
+
