@@ -4,7 +4,77 @@
 // Sass:
 // https://fontawesome.com/how-to-use/on-the-web/using-with/sass
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body{
-  background-color: #BADA55;
+  background-color: silver;
 }
+
+.container {
+  width: 1152px;
+  height: 500px;
+.slider{
+  width: 80%;
+  height: 500px;
+  margin: auto;
+  text-align: center;
+
+  .visible{
+    display: inline-block;
+  }
+
+    ul {
+      list-style: none;
+      font-family: "Arial", sans-serif;
+      padding-left: 125px;
+      padding-top: 240px;
+
+      li  {
+        list-style-type: none;
+        display: none;
+
+
+        .bigger {
+          font-size: 48px;
+          padding-bottom: 15px;
+        }
+
+        p {
+          font-size: 32px;
+        }
+
+        .slide {
+          position: relative;
+          margin: auto;
+          list-style-type: none;
+          height: 500px;
+        }
+      }
+    }
+
+  }
+}
+
+#prev, #next {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 45%;
+  font-size: 50px;
+  font-family: 'Arial', sans-serif;
+  align-items: center;
+
+}
+
+#prev{
+  left: 50px;
+}
+
+#next{
+  right: 50px;
+}
+
