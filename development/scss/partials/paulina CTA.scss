@@ -1,0 +1,41 @@
+.container {
+  background-color: #4a4a49;
+  color: white;
+  display: flex;
+  width: 1152px;
+
+}
+.mainCta{
+  justify-content: left;
+  height: 200px;
+padding: 10px 40px;
+  width: 70%;
+  font-family: "Open Sans" ;
+  p{
+    font-size: 14px;
+  }
+
+
+}
+
+.buttonCta{
+  justify-content: right;
+  height: 200px;
+  width: 30%;
+  padding: 30px 93px;
+  button{
+    width: 120px;
+    height: 40px;
+    background-color: #E58A20;
+    border: none;
+    vertical-align: middle;
+    align-items: center;
+
+  a{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+  }
+  }
+}
