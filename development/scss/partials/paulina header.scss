@@ -2,7 +2,7 @@ header{
   height: 100px;
 }
 .container{
-  width: 1024px;
+  width: 1152px;
   display: flex;
   background-color:#4a4a49 ;
   margin: 0 auto;
@@ -26,6 +26,8 @@ header{
 
     .logo1{
       color: white;
+      padding-right: 8px;
+      padding-left: 10px;
 
     }
     .logo2{
@@ -48,6 +50,7 @@ header{
     align-items:center ;
     padding: 20px 10px;
 
+
     li{
       text-decoration: none;
       display: list-item;
@@ -59,7 +62,7 @@ header{
       a{
         color:white ;
         text-decoration: none;
-
+        font-family: "Open sans";
         }
       }
     }
