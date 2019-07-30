@@ -38,9 +38,9 @@ body {
       &:first-of-type {
         width: 335px;
         height: 350px;
-        background-color: #5B605F;
+        background-image: url("../images/logo.jpg");
+        background-position: center;
       }
-
       &:last-of-type {
         width: 58%;
       }
