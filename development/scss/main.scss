@@ -36,7 +36,7 @@ body {
   .mainCta {
     justify-content: center;
     align-items: center;
-    padding: 10px 60px;
+    padding: 30px 80px;
     width: 70%;
     p {
       font-size: 14px;
@@ -44,10 +44,9 @@ body {
   }
 
   .buttonCta {
-    justify-content: center;
-    align-items: center;
+
     width: 30%;
-    padding: 30px 93px;
+    padding: 50px 105px;
 
     button {
       width: 120px;
@@ -56,6 +55,7 @@ body {
       border: none;
       vertical-align: middle;
       align-items: center;
+
 
       a {
         text-decoration: none;
