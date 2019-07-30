@@ -3,14 +3,66 @@
 //
 // Sass:
 // https://fontawesome.com/how-to-use/on-the-web/using-with/sass
-
-@import "partials/reset";
-@import "partials/paulina header";
-@import "partials/paulina CTA";
-
-
-
-body{
-  background-color: white;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+body {
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.container {
+  width: 1152px;
+  display: flex;
+}
+
+
+
+.callToAction {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  .container{
+  background-color: #4a4a49;
+  color: white;
+  height: 150px;
+  justify-content: center;
+
+
+  .mainCta {
+    justify-content: center;
+    align-items: center;
+    padding: 10px 60px;
+    width: 70%;
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .buttonCta {
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    padding: 30px 93px;
+
+    button {
+      width: 120px;
+      height: 40px;
+      background-color: #E58A20;
+      border: none;
+      vertical-align: middle;
+      align-items: center;
+
+      a {
+        text-decoration: none;
+        text-align: center;
+        color: white;
+        font-weight: bold;
+      }
+    }
+  }
+}}
