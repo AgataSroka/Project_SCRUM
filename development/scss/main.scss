@@ -10,14 +10,17 @@
   box-sizing: border-box;
 }
 
-body{
-  background-color: silver;
-}
-
 .container {
   width: 1152px;
-  height: 500px;
-.slider{
+  display: flex;
+}
+
+body {
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+section .slider{
   width: 80%;
   height: 500px;
   margin: auto;
@@ -57,9 +60,9 @@ body{
     }
 
   }
-}
 
-#prev, #next {
+
+section .slider #prev, #next {
   width: 50px;
   height: 50px;
   position: absolute;
@@ -70,11 +73,11 @@ body{
 
 }
 
-#prev{
+section .slider #prev{
   left: 50px;
 }
 
-#next{
+section .slider #next{
   right: 50px;
 }
 
