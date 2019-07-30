@@ -5,8 +5,11 @@
 }
 
 body{
-  font-family: 'Open Sans',Arial,sans-serif,Verdana;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
 }
+
 [class*="col-"]{
   width:100%;
   display: block;
@@ -57,8 +60,8 @@ $cols:18;
   a{
     text-decoration: none;
     padding-top:1.5rem;
-    font-size: 1.2rem;
-    font-weight: bold;
+    font-size: 1.3rem;
+    font-weight:400;
     padding-right:4rem;
     color:white;
     i{
@@ -72,46 +75,50 @@ $cols:18;
 .left{
   background-color: #5B605F;
   height:50rem;
+  ul{
+    list-style-type: none;
+  }
+  ul li{
+    display: block;
+    height:5rem;
+    font-size:1rem;
+    font-weight:400;
+    padding-top:2rem;
+    padding-left:0.5rem;
+    position:relative;
+    a{
+      text-decoration: none;
+      color:white;
+    }
+  }
+  ul li:hover{
+    font-weight: 800;
+  }
+  ul li:hover:before{
+    content:"";
+    display:block;
+    width:0.5rem;
+    height:5rem;
+    position:absolute;
+    top:0;
+    left:-0.625rem;
+    background-color: #E58A20;
+  }
+
+  ul li:hover:after{
+    content:"";
+    display:block;
+    width:0.5rem;
+    height:0.5rem;
+    position:absolute;
+    top:2.5rem;
+    right:1rem;
+    border-top:2px solid #E58A20;
+    border-right:2px solid #E58A20;
+    transform:rotate(45deg);
+  }
 }
 .main{
   background-image: url("../images/image.png");
   height:50rem;
-}
-ul{
-  list-style-type: none;
-}
-ul li{
-  display: block;
-  height:5rem;
-  font-size:1rem;
-  font-weight: bold;
-  padding-top:2rem;
-  padding-left:0.5rem;
-  position:relative;
-  a{
-    text-decoration: none;
-    color:white;
-  }
-}
-ul li:hover:before{
-  content:"";
-  display:block;
-  width:0.5rem;
-  height:5rem;
-  position:absolute;
-  top:0;
-  left:-0.625rem;
-  background-color: #E58A20;
-}
-ul li:hover:after{
-  content:"";
-  display:block;
-  width:0.5rem;
-  height:0.5rem;
-  position:absolute;
-  top:2.5rem;
-  right:1rem;
-  border-top:2px solid #E58A20;
-  border-right:2px solid #E58A20;
-  transform:rotate(45deg);
 }
