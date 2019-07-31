@@ -18,27 +18,29 @@
       <div class="row">
         <header class="header">
           <h1>Zaplanuj <span>Jedzonko</span></h1>
-          <a>Imię  <i class="far fa-user-circle"></i></a>
+          <a class="aName">Imię <i class="far fa-user-circle"></i></a>
         </header>
       </div>
       <div class="row">
         <div class="left col-3">
           <ul>
-            <li><a href="#">Pulpit</a></li>
-            <li><a href="#">Przepisy</a></li>
-            <li><a href="#">Plany</a></li>
+            <li><a href="app.html">Pulpit</a></li>
+            <li><a href="recipes.html">Przepisy</a></li>
+            <li><a href="schedules.html">Plany</a></li>
           </ul>
         </div>
         <div class="main col-15">
           <div class="container">
             <div class="row">
-              <article class="featured col-17">
+              <article class="form col-17">
                 <h2>Witaj,</h2>
                 <h3>wygląda na to że jesteś tutaj<br> pierwszy raz!</h3>
                 <br>
-                <input type="text" placeholder=" tutaj wpisz jak masz na imię" /><br>
+                <input id="name" type="text" placeholder=" tutaj wpisz jak masz na imię" /><br>
                 <button>Gotowe!</button><br>
                 <p>Podaj nam swoje imię, a my zorganizujemy <br>dla Ciebie naszą aplikacje :)</p>
+                <br>
+                <p class="errorMessage"></p>
               </article>
               <article class="col-1"></article>
             </div>
