@@ -150,6 +150,7 @@ header {
         }
 
 
+
         .slide {
           position: relative;
           margin: auto;
@@ -374,4 +375,32 @@ footer {
 
 
 
+.about_app{
+  width: 100%;
+  height: 620px;
+  display: inline-block;
+  margin: auto;
+  background-color: silver;
+  .box{
+    display: block;
+    width: 33%;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+    padding: 40px;
+    color: dimgrey;
+    line-height: 30px;
+
+    .title_box{
+      font-size: 32px;
+      padding-bottom: 20px;
+      margin-top: 15px;
+      line-height: 40px;
+
+    }
+    p{
+      font-size: 24px;
+    }
+  }
+}
 
