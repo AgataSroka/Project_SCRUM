@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded',function () {
     var btn = document.querySelector("button");
-    var articleform=document.querySelector('.form')
+    var articleform=document.querySelector('.form');
+    var articleformLogIn = document.querySelector(".formLogIn");
     var aName=document.querySelector('a.aName');
     var errorMessage=document.querySelector('.errorMessage');
 
@@ -8,6 +9,7 @@ document.addEventListener('DOMContentLoaded',function () {
 
     if(localStorage.getItem("name")!==null) {
         articleform.classList.add("hide");
+        articleformLogIn.classList.remove("hide");
         var icon='<i class="far fa-user-circle"></i>'; //ikona przy imieniu
         aName.innerHTML=localStorage.getItem("name")+icon;
     }
@@ -21,6 +23,7 @@ document.addEventListener('DOMContentLoaded',function () {
             var userName = document.getElementById("name").value;
             localStorage.setItem("name", userName);
             articleform.classList.add("hide");
+            articleformLogIn.classList.remove("hide");
             location.reload();
         }
     });

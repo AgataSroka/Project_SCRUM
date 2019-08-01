@@ -1,55 +1,208 @@
 <!DOCTYPE html>
 <html lang="pl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>Zaplanuj Jedzonko</title>
     <link href="https://fonts.googleapis.com/css?family=Charmonman&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" rel ="stylesheet">
-    <link rel="stylesheet" href="./css/app.css" />
-  </head>
-  <body>
-    <!--<header>
-      <h1>Hello App!</h1>
-    </header>-->
-    <section class="container">
-      <div class="row">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/app.css"/>
+</head>
+<body>
+<!--<header>
+  <h1>Hello App!</h1>
+</header>-->
+<section class="container">
+    <div class="row">
         <header class="header">
-          <h1>Zaplanuj <span>Jedzonko</span></h1>
-          <a class="aName">Imię <i class="far fa-user-circle"></i></a>
+            <h1>Zaplanuj <span>Jedzonko</span></h1>
+            <a class="aName">Imię <i class="far fa-user-circle"></i></a>
         </header>
-      </div>
-      <div class="row">
+    </div>
+    <div class="row">
         <div class="left col-3">
-          <ul>
-            <li><a href="app.html">Pulpit</a></li>
-            <li><a href="recipes.html">Przepisy</a></li>
-            <li><a href="schedules.html">Plany</a></li>
-          </ul>
+            <ul>
+                <li><a href="app.html">Pulpit</a></li>
+                <li><a href="recipes.html">Przepisy</a></li>
+                <li><a href="schedules.html">Plany</a></li>
+            </ul>
         </div>
         <div class="main col-15">
-          <div class="container">
-            <div class="row">
-              <article class="form col-17">
-                <h2>Witaj,</h2>
-                <h3>wygląda na to że jesteś tutaj<br> pierwszy raz!</h3>
-                <br>
-                <input id="name" type="text" placeholder=" tutaj wpisz jak masz na imię" /><br>
-                <button>Gotowe!</button><br>
-                <p>Podaj nam swoje imię, a my zorganizujemy <br>dla Ciebie naszą aplikacje :)</p>
-                <br>
-                <p class="errorMessage"></p>
-              </article>
-              <article class="col-1"></article>
+            <div class="container">
+                <div class="row">
+                    <article class="form col-17">
+                        <h2>Witaj,</h2>
+                        <h3>wygląda na to że jesteś tutaj<br> pierwszy raz!</h3>
+                        <br>
+                        <input id="name" type="text" placeholder=" tutaj wpisz jak masz na imię"/><br>
+                        <button>Gotowe!</button>
+                        <br>
+                        <p>Podaj nam swoje imię, a my zorganizujemy <br>dla Ciebie naszą aplikacje :)</p>
+                        <br>
+                        <p class="errorMessage"></p>
+                    </article>
+
+                    <article class="formLogIn col-18 hide">
+
+                        <div class="upperRow">
+
+                            <div class="addRecipe">
+                                <a href="#"> <i class="fas fa-plus"></i><br>dodaj przepis </a>
+                            </div>
+
+                            <div class="addPlan">
+                                <a href="#"> <i class="fas fa-plus"></i><br>dodaj plan </a>
+                            </div>
+
+                            <div class="notifications">
+                                <div class="info"><i class="fas fa-info-circle"></i> Masz już 99 przepisów, nieźle! <i
+                                        class="fas fa-window-close"></i></div>
+                                <div class="exclamation"><i class="fas fa-exclamation-circle"></i> Pamiętaj, aby dodać
+                                    plan! <i class="fas fa-window-close"></i></div>
+                                <div class="check"><i class="fas fa-check-circle"></i> Świetnie że jesteś! Udanego
+                                    planowania i smaczego! :) <i class="fas fa-window-close"></i></div>
+                            </div>
+
+                        </div>
+
+                        <div class="lowerRow">
+                            <div class="row">
+                                <div class="col-7">
+                                    <p> Twój plan na {nr_tygodnia} tydzień :</p>
+                                    <br>
+                                    <hr>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-1">
+                                    <ul class="monday">
+                                        <li>Poniedziałek</li>
+                                        <hr>
+                                        <li>sniadanie</li>
+                                        <hr>
+                                        <li>drugie sniadanie</li>
+                                        <hr>
+                                        <li>zupa</li>
+                                        <hr>
+                                        <li>drugie danie</li>
+                                        <hr>
+                                        <li>kolacja</li>
+                                    </ul>
+                                </div>
+                                <div class="col-1">
+                                    <ul class="tuesday">
+                                        <li>Wtorek</li>
+                                        <hr>
+                                        <li>sniadanie</li>
+                                        <hr>
+                                        <li>drugie sniadanie</li>
+                                        <hr>
+                                        <li>zupa</li>
+                                        <hr>
+                                        <li>drugie danie</li>
+                                        <hr>
+                                        <li>kolacja</li>
+                                    </ul>
+                                </div>
+                                <div class="col-1">
+                                    <ul class="wednesday">
+                                        <li>Środa</li>
+                                        <hr>
+                                        <li>sniadanie</li>
+                                        <hr>
+                                        <li>drugie sniadanie</li>
+                                        <hr>
+                                        <li>zupa</li>
+                                        <hr>
+                                        <li>drugie danie</li>
+                                        <hr>
+                                        <li>kolacja</li>
+                                    </ul>
+                                </div>
+                                <div class="col-1">
+                                    <ul class="thursday">
+                                        <li>Czwartek</li>
+                                        <hr>
+                                        <li>sniadanie</li>
+                                        <hr>
+                                        <li>drugie sniadanie</li>
+                                        <hr>
+                                        <li>zupa</li>
+                                        <hr>
+                                        <li>drugie danie</li>
+                                        <hr>
+                                        <li>kolacja</li>
+                                    </ul>
+                                </div>
+                                <div class="col-1">
+                                    <ul class="friday">
+                                        <li>Piątek</li>
+                                        <hr>
+                                        <li>sniadanie</li>
+                                        <hr>
+                                        <li>drugie sniadanie</li>
+                                        <hr>
+                                        <li>zupa</li>
+                                        <hr>
+                                        <li>drugie danie</li>
+                                        <hr>
+                                        <li>kolacja</li>
+                                    </ul>
+                                </div>
+                                <div class="col-1">
+                                    <ul class="saturday">
+                                        <li>Sobota</li>
+                                        <hr>
+                                        <li>sniadanie</li>
+                                        <hr>
+                                        <li>drugie sniadanie</li>
+                                        <hr>
+                                        <li>zupa</li>
+                                        <hr>
+                                        <li>drugie danie</li>
+                                        <hr>
+                                        <li>kolacja</li>
+                                    </ul>
+                                </div>
+                                <div class="col-1">
+                                    <ul class="sunday">
+                                        <li>Niedziela</li>
+                                        <hr>
+                                        <li>sniadanie</li>
+                                        <hr>
+                                        <li>drugie sniadanie</li>
+                                        <hr>
+                                        <li>zupa</li>
+                                        <hr>
+                                        <li>drugie danie</li>
+                                        <hr>
+                                        <li>kolacja</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-7">
+
+                                    <hr>
+                                    <br>
+                                    <span class="button"><< poprzednie</span>
+                                    <span class="button">nastepne >></span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </article>
+
+                    <article class="col-1"></article>
+                </div>
             </div>
-          </div>
         </div>
 
-      </div>
+    </div>
 
-    </section>
-    <script src="./js/app.js"></script>
-  </body>
+</section>
+<script src="./js/app.js"></script>
+</body>
 </html>
