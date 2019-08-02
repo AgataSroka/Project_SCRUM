@@ -9,22 +9,24 @@ document.addEventListener('DOMContentLoaded',function () {
 
         allRecipes.forEach(function(singleRecipe) {
 
-            var newLi = document.createElement("td");
+            var newTd = document.createElement("td");
 
-            newLi.innerHTML = singleRecipe.title;
+            newTd.innerHTML = singleRecipe.title;
 
-            var ingredientsUl = document.createElement("tr");
-            newLi.appendChild(ingredientsUl);
+            var ingredientsTr = document.createElement("tr");
+            newTd.appendChild(ingredientsTr);
 
             singleRecipe.ingredients.forEach(function(ingredient) {
 
-                var newRecipeLi = document.createElement("td");
-                newRecipeLi.innerHTML = ingredient;
-                ingredientsUl.appendChild(newRecipeLi);
+                var newRecipeTd = document.createElement("td");
+                newRecipeTd.innerHTML = ingredient;
+                ingredientsTr.appendChild(newRecipeTd);
             });
 
-            newList.appendChild(newLi);
+            newList.appendChild(newTd);
             allRecipesContainer.appendChild(newList);
         });
     }
+
 });
+
