@@ -1,0 +1,124 @@
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding: 0;
+}
+
+body{
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+[class*="col-"]{
+  width:100%;
+  display: block;
+}
+
+$cols:18;
+@media (min-width:600px) {
+  .container {
+    max-width: 1200px;
+    margin:0 auto;
+    width:100%;
+    .row {
+      @for $i from 1 through $cols{
+        .col-#{$i}{
+          float:left;
+          min-height: 1px;
+          width: 100%/$cols *$i;
+          //border:1px solid orange;
+          //gutter
+          padding-left:10px;
+        }
+      }
+      &:after, &:before {
+        content: "";
+        display: block;
+        clear: both;
+      }
+    }
+  }
+}
+
+.header{
+  display:flex;
+  justify-content: space-between;
+  background-color: #4a4a49;
+  height:5rem;
+  border-bottom: 1px solid darken(#4a4a49,10%);
+  h1{
+    font-family: 'Charmonman', cursive;
+    padding-top:1.2rem;
+    padding-left:1rem;
+    font-size:1.5rem;
+    color:white;
+    span{
+      color:#E58A20;
+    }
+  }
+  a{
+    text-decoration: none;
+    padding-top:1.5rem;
+    font-size: 1.3rem;
+    font-weight:400;
+    padding-right:4rem;
+    color:white;
+    i{
+      color:#E58A20;
+      font-size: 2rem;
+      vertical-align: middle;
+      padding-left:10px;
+    }
+  }
+}
+.left{
+  background-color: #5B605F;
+  height:50rem;
+  ul{
+    list-style-type: none;
+  }
+  ul li{
+    display: block;
+    height:5rem;
+    font-size:1rem;
+    font-weight:400;
+    padding-top:2rem;
+    padding-left:0.5rem;
+    position:relative;
+    a{
+      text-decoration: none;
+      color:white;
+    }
+  }
+  ul li .active{
+    font-weight: 800;
+  }
+  ul li .active:before{
+    content:"";
+    display:block;
+    width:0.5rem;
+    height:5rem;
+    position:absolute;
+    top:0;
+    left:-0.625rem;
+    background-color: #E58A20;
+  }
+
+  ul li .active:after{
+    content:"";
+    display:block;
+    width:0.5rem;
+    height:0.5rem;
+    position:absolute;
+    top:2.5rem;
+    right:1rem;
+    border-top:2px solid #E58A20;
+    border-right:2px solid #E58A20;
+    transform:rotate(45deg);
+  }
+}
+.main{
+  background-image: url("../images/image.png");
+  height:50rem;
+}
