@@ -5,6 +5,8 @@ document.addEventListener('DOMContentLoaded',function () {
 
         var allRecipes = JSON.parse(localStorage.getItem("recipes"));
 
+        console.log(localStorage.getItem('recipes'));
+
         var newList = document.createElement("tr");
 
         allRecipes.forEach(function(singleRecipe) {
