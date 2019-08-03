@@ -1,0 +1,93 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.table_recipes {
+  background-color: #FFFFFA;
+  width: 900px;
+  border: 2px solid lightgrey;
+  margin-left: 40px;
+  margin-top: 30px;
+
+  .container {
+    width: 850px;
+
+ }
+.add_recipe {
+  display: inline-flex;
+  width: 100%;
+
+  .fa-plus-square {
+    font-size: 30px;
+    color: darkgreen;
+    padding-left: 650px;
+    padding-top: 20px;
+  }
+  h2 {
+    text-transform: uppercase;
+    color: #FF6600;
+    margin-top: 20px;
+  }
+}
+    hr {
+      margin-bottom: 15px;
+    }
+
+    .title_row{
+      width: 93%;
+      margin-left: 17px;
+      margin-right: 35px;
+      color: dimgrey;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .table_style {
+      width: 100%;
+      padding-left: 15px;
+      padding-right: 15px;
+      color: #5B605F;
+      display: block;
+      overflow: scroll;
+      overflow-style: marquee-line;
+      height: 550px;
+
+      p{
+        padding: 5px;
+      }
+
+      .bigger_font {
+        font-size: 16px;
+        vertical-align: top;
+      }
+
+      .one_line {
+        display: flex;
+       justify-content: space-between;
+
+        .fa-edit {
+          color: darkorange;
+          font-size: 20px;
+          display: flex;
+          padding-left: 10px;
+          padding-right: 5px;
+        }
+
+        .fa-trash-alt {
+          color: red;
+          font-size: 20px;
+          display: flex;
+          padding-right: 10px;
+
+        }
+      }
+    }
+  }
